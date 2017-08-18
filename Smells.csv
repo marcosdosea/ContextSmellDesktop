@@ -1,0 +1,762 @@
+Class;DesignRole;Approaches;Method;LOC;CC;Efferent;NOP;Smell;
+br.gov.se.sefaz.sae.custodiais.to.TransacaoCustodiais;TRANSACAO; R, D ;getContadorAtivos;9;1;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.isencaoTributos.to.certidaoIPVA.EmitirCertidaoNegativa;TRANSACAO; R ;process;60;8;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDaeICMSContribuiteInscritoEspecial;193;33;11;2;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeTipoOperacao;ENTITY; D ;setDsTipoOperacao;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeTalonario;ENTITY; D ;adicionarValoresDAEManual;7;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeMotivoTalao;ENTITY; D ;getEntiadeSituacaoTalao;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.alteracao.itemDAE.AlterarItemDAE;TRANSACAO; R, D ;validaValorTotalReceitaAtualizado;16;5;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;obterOcorrenciasNavegacao;19;3;10;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;registrarHistoricoDesmembrarDAE;3;1;2;9;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialGMR;14;3;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineDAE;BACKGROUNDPROCESS; D ;validarSituacaoDocumento;33;19;14;3;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirValoresDED;80;27;13;3;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.ExcluirItemDAE;TRANSACAO; R, D ;process;133;33;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.desmembramento.das.AlterarDASDesmembramento;TRANSACAO; R, D ;initialize;80;34;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosConcBancaria;93;75;9;5;Método Longo
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;getValorCampoLayout;12;3;6;3;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeHistUnidadeTalao;ENTITY; D ;getEntidadeCampoDoc;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEDIA;132;42;20;5;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;setGNRE;186;57;23;3;Muitos Desvios
+br.gov.se.sefaz.sae.custodiais.to.vencimentoIcms.IncluirVencimentoIcms;TRANSACAO; R ;process;256;55;18;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterVencimentoPSDI;97;19;14;2;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;91;17;13;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.util.campo.CamposSAE;[CONSTANTES, CONSTANTESEMISSAODAE]; R, D ;formatarDocumento;51;22;2;2;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;calcularITD;44;9;11;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNRE;BACKGROUNDPROCESS; R, D ;registrarRecolhimentoDocumento;230;62;30;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.concBanc.ConsultaConcBanc;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroIntervaloData;71;31;7;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.ConsultarContribuinteDAEManual;TRANSACAO; R, D ;process;118;40;19;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.arquivo.ReceberArquivo;BACKGROUNDPROCESS; R ;run;114;24;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialCmdSQLEntidadeCredora;94;8;8;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeMotivoAlteracaoDoc;ENTITY; D ;setDsMotivo;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarSubstituirDAEMensal;3;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarHistoricoTalao;9;1;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;ocultarCampoDAEManualViaEletronica;390;56;12;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrMesRefInicial;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;getEntidadeProdutoSAE;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeUnidadeTalao;ENTITY; D ;setDtCadastro;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;obterVencimentoPSDIDiferido;7;1;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDAEManualViaEletronica;623;169;16;1;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setDtOperacao;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDAEDuplicado;67;38;8;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;verificarContaRepetida;10;2;6;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasse;TRANSACAO; R, D ;gravarArquivoRepasseDAE;382;67;17;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;montarFiltroArg;375;44;15;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeVeiculoDetranNova;ENTITY; D ;getFlParcelamento;6;2;1;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.itcmd.ConsultarContribuinteITCMD;TRANSACAO; R, D ;initialize;108;45;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;consultarHistoricoChequeDevolvido;8;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineDAE;BACKGROUNDPROCESS; R, D ;validarDocumentoMovimentoConsolidado;115;27;25;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.documento.ItemDetalheDAE;TRANSACAO; R, D ;setDocValores;26;7;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDae;92;41;3;3;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeCredora;ENTITY; D ;getContaBancaria;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ListarAtvdEconCateg;TRANSACAO; R, D ;montaDocSaidaCNAE;25;6;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqChequeDevolvido;BACKGROUNDPROCESS; R, D ;getChdChequeDevolvidoAtual;23;2;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroIntervaloData;198;43;7;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirDetalheDAEToSource;95;48;3;3;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;exibirCamposDesmembramentoDAE;96;50;11;2;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDAE;409;196;17;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeRegimeTributacao;ENTITY; D ;setDtFimVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarItensDED;103;113;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;gerarLinhaDigitavel;8;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.registro.RegistroA;REGISTROMOVCONSOLIDADO; R, D ;validar;73;22;12;1;Muitos Desvios
+br.gov.se.sefaz.sae.dao.custodiais.DAOSAESQLBean;PERSISTENCE; D ;registrarHistoricoCustodial;13;9;6;8;Muitos Desvios
+br.gov.se.sefaz.sae.dao.isencaoTributos.DAOIsencaoTributosSQLBean;PERSISTENCE; R, D ;baixaIsencao;9;1;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemICMSContribuinteInscrito;TRANSACAO; R, D ;initialize;255;55;9;0;Método Longo
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;getValorCampoLayoutNomeEmpresa;5;2;5;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.talonario.to.alterar.AlterarTalaoDAEManual;TRANSACAO; R ;process;50;6;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirItemReceitaOutroOrgao;69;28;8;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;registrarInclusaoCheque;49;16;18;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.isencaoTributos.to.certidaoIPVA.CertidaoBase;TRANSACAO; R, D ;adequaDocSaida;21;4;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeIsencaoVeiculo;ENTITY; D ;setTpIsencao;4;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialFormaRecolhimento;19;4;9;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.antecipacaoMensal.reemissao.ReemitirAntecipacaoMensal;TRANSACAO; R, D ;process;88;14;20;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ne.EntidadeMotivoDAEManual;ENTITY; D ;setDsMotivo;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeConvenioProdutoGNRE;ENTITY; D ;getEntidadeConvenio;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarDadosDAE;421;194;18;2;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroDocumento;96;24;7;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;registrarAlteracaoCheque;67;27;8;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;registrarHistoricoChequeDevolvido;19;2;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarRecolhimentoGNRE;68;12;24;6;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.isencaoTributos.to.TransacaoIsencaoTributosBase;TRANSACAO; R, D ;montarDocumentoMantab;36;9;10;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemICMSContribuinteInscrito;TRANSACAO; R, D ;process;103;59;15;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;registrarAlteracaoDAS;124;27;17;3;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;validarDadosGNREDesmembramento;51;24;16;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;exibirCamposDesmembramentoGNRE;126;77;14;2;Muitos Desvios
+br.gov.se.sefaz.sae.tb.arquivo.ReceberArquivo;BACKGROUNDPROCESS; R ;run;114;24;11;0;Método Longo
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.consultaArquivo.ConsultarArquivosNaoEnviadosPeloBanco;TRANSACAO; R ;process;91;26;18;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDaeICMSContribuiteInscritoEspecial;193;33;11;2;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;concatenarCampos;196;71;24;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.oper.to.desmembramento.itemDae.InserirItemDesmembramentoDAE;TRANSACAO; R ;process;28;23;7;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.alteracao.dae.AlterarDAE;TRANSACAO; R, D ;process;96;28;23;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.viaEletronicaDAEManual.ConsultarContribuinteDAEManual;TRANSACAO; R ;process;118;40;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;exibirCamposDesmembramentoGNRE;126;77;14;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;gravaConfirmacaoRepasse;24;7;9;7;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeUnidadeTalao;ENTITY; D ;getEntidadeUnidade;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.arquivo.ProcessarArquivoRecebidoBase;BACKGROUNDPROCESS; R, D ;DocumentoArrecadacao;16;1;5;14;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorGNRE;UNDEFINED; R, D ;converterEntidadeGNRE;154;39;18;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarItensDED;103;113;9;5;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarRecolhimento;148;61;26;3;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;montarFiltroArg;375;44;15;4;Método Longo
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSRC;UNDEFINED; R, D ;obterVencimentoReceita;3;1;5;13;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorRepasse;GERENCIADORBASE; R, D ;consultarRepasseFunprevporPeriodo;26;10;6;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.desmembramento.itemDae.ListarItensDesmembramentoDAE;TRANSACAO; R, D ;registrarDesemembramentoItemDAE;222;80;15;4;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarDocOrigemTpDocDAE;16;2;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.IdentificacaoDoc;TRANSACAO; R, D ;montaDocItemsCons;39;5;12;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.sit.EmitirDAEMensal;TRANSACAO; R, D ;comparaDataInicialFinal;8;8;2;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirItemDAEContribuinteInscrito;135;56;20;3;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeICMSContribNaoInsc;ENTITY; D ;getEntidadeFormaRecolhimento;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.ConsultarDetalheDAE;TRANSACAOOPERACIONAL; R, D ;getOcorrenciasNavegacao;87;39;11;2;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; D ;consultaEnvioArqConsolidado;7;1;5;3;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;setGNRE;186;57;23;3;Método Longo
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSAP;UNDEFINED; R, D ;gerarDAE;3;1;6;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeTipoDesconto;ENTITY; D ;setDtFimVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.AlterarItemDAE;TRANSACAO; R, D ;process;291;120;17;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ConsultaArrecadacaoARecolher;TRANSACAO; R, D ;setItensDocumento;58;11;13;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropiedadesItemDaeICMSEspecialNaoInscrito;96;13;5;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;registrarReativacaoDAE;20;4;12;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropiedadesItemDaeReceitaOutrosOrgaos;148;25;14;2;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.desmembramento.das.DesmembrarDAS;TRANSACAO; R, D ;process;99;43;16;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNRE;BACKGROUNDPROCESS; R, D ;registrarRecolhimentoDocumento;230;62;30;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;validarDadosGNRE;69;34;15;2;Muitos Desvios
+br.gov.se.sefaz.sae.ne.DedDetalheDAE;ENTITY; D ;removerEtiqueta;10;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarHistoricoDAEManualCollecao;16;3;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorConcBancBase;GERENCIADORBASE; R, D ;registrarMovConsolidadoIPVA;19;2;8;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasse;TRANSACAO; R, D ;gravarArquivoRepasseGNRE;159;30;15;3;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropriedadesItemReceitaNaoTributaria;109;10;10;2;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.AlterarItemDAE;TRANSACAO; R, D ;process;147;61;13;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeConvenio;ENTITY; D ;setNrTipoConvenio;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterDataVencimentoICMS;47;25;10;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;formatarTela;91;40;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSIT;[CONSTANTESEMISSAODAE]; R, D ;gerarDAE;4;1;4;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;obtemDAEInconsistentePorChequeDevolvido;19;2;8;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoDataOnLine;9;1;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeIsencaoVeiculo;ENTITY; D ;setDtInicioIsencao;4;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroDocumento;96;24;7;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;obtemItensDAEChequeDevolvido;9;1;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.RegistrarConfirmacaoRepasseFinanceiro;TRANSACAO; R, D ;process;76;14;21;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.reemissao.GerarItemDAEITCMD;TRANSACAO; R, D ;montaDocEntrada;24;4;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.correcao.CorrigirDadosGNRE;BACKGROUNDPROCESS; R, D ;verificaCamposAlterados;58;16;7;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosConcBancaria;93;75;9;5;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;getNmPessoa;25;4;12;1;Método Longo
+br.gov.se.sefaz.sae.custodiais.to.vencimentoIcms.AlterarVencimentoIcms;TRANSACAO; R, D ;process;136;38;16;0;Muitos Desvios
+br.gov.se.sefaz.sae.talonario.to.alterar.CorrigirNumeroTalaoDAEManual;TRANSACAO; R ;process;90;13;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.ConsultarContribuinteDAEManual;TRANSACAO; R ;process;118;40;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;setValoresCamposLayout;24;3;11;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;preencheDocCabecalhoSAE;62;15;8;3;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeICMSContribInsc;ENTITY; D ;getEntidadeFormaRecolhimento;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;calcularQuantidadeTalaoDAE;3;1;1;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.util.Excecao;EXCEPTION; D ;Excecao;4;1;3;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESAP;110;39;17;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.ConsultarRepasseDASGNRE;TRANSACAO; R ;exibirRepasseDASGNRE;134;27;12;1;Muitos Desvios
+br.gov.se.sefaz.sae.talonario.to.baixarDAEManual.ListarDAEsParaBaixa;TRANSACAO; R, D ;obterOcorrenciasNavegacao;19;3;10;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.ConsultarContribuinte;TRANSACAO; R, D ;initialize;145;53;12;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R ;registrarDadosConcBanc;137;22;18;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.custodiais.to.vencimentoIcms.AlterarVencimentoIcms;TRANSACAO; R, D ;process;136;38;16;0;Método Longo
+br.gov.se.sefaz.sae.oper.to.desmembramento.itemDae.ListarItensDesmembramentoDAE;TRANSACAO; R, D ;registrarDesemembramentoItemDAE;222;80;15;4;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIsencaoTributos;GERENCIADORBASE; R, D ;atualizarTpSolicitantePorChassi;4;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirSourceToResultITD;100;16;4;2;Método Longo
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasse;TRANSACAO; R, D ;gravarArquivoRepasseDAE;382;67;17;5;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeRegimeTributacao;ENTITY; D ;setDtInicioVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArqRepasseDAE;BACKGROUNDPROCESS; R ;processarArquivo;131;20;22;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarDataArrecadacaoDAE;7;1;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEITCMD;90;29;20;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESIT;120;41;19;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNRE;BACKGROUNDPROCESS; R ;registrarRecolhimentoDocumento;189;55;24;0;Método Longo
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.consulta.ConsultarArrecadacaoDia;TRANSACAO; R, D ;setItensDocumento;142;4;6;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;exibirCamposGNRE;205;84;17;2;Método Longo
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDesmembramentoGNRE;285;161;17;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;gravaConfirmacaoRepasseSQL;28;7;10;7;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ListarPendenciasDoc;TRANSACAO; R, D ;getOcorrenciasNavegacao;20;3;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setVlPercentAliquota;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.alteracao.viaEletronica.ExcluirDAEManualViaEletronica;TRANSACAO; R, D ;process;195;74;18;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.ConsultarContribuinte;TRANSACAO; R, D ;initialize;145;53;12;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;gerarNotificacaoCadastroChequeDev;41;3;14;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeTipoDocOrigem;ENTITY; D ;setDsTipoDocumentoOrigem;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;calcularEncargosReceita;92;19;12;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeCredora;ENTITY; D ;getOrgao;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;inserirDocumentoArrecadacaoSql;131;22;5;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeRegimeTributacao;ENTITY; D ;setDsRegimeTributacaoICMS;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaQuery;173;26;14;2;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeCombSituacaoCheqDev;ENTITY; D ;getSituacaoAtual;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirLabel;171;67;3;2;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.GerarItemITD;TRANSACAO; R, D ;process;176;80;13;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarCancelamentoDAE;3;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDAR;91;38;8;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.ConsultarContribuinte;TRANSACAO; R, D ;process;103;37;17;0;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;verificarExistenciaGNRE;62;15;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorRepasse;GERENCIADORBASE; R, D ;calcularRepasseCedidoTesouro;19;1;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.dao.custodiais.DAOSAESQLBean;PERSISTENCE; D ;getEntidadeVencimentoICMS;42;2;8;1;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDaeReceitaOutrosOrgaos;148;25;14;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESAP;110;39;17;8;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;gerarSequenciaDAEManual;55;9;8;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeFormaRecolhimento;ENTITY; D ;getEntidadeGrupoRecolhimento;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setFlMesVencimentoSubsequente;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setVlPercentAgregacao;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemReceitaOutrosOrgaos;TRANSACAO; R ;process;98;34;11;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeHistFechamentoArrec;ENTITY; D ;setCdPessoaOperacao;11;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;montarComboCnaefContribNaoInscrito;27;3;13;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNRE;BACKGROUNDPROCESS; R, D ;registrarRecolhimentoDocumento;189;55;24;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDAE;409;196;17;1;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeGrupoRecolhimento;ENTITY; D ;setDsGrupoRecolhimento;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIsencaoTributos;GERENCIADORBASE; R, D ;atualizarTpSolicitantePorRenavam;4;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.AlterarItem;TRANSACAO; R, D ;process;125;52;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeHistUnidadeTalao;ENTITY; D ;getEntidadeOrgao;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.alteracao.dae.AlterarDAE;TRANSACAO; R, D ;process;96;28;23;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeConversaoReceita;ENTITY; D ;getEntidadeReceitaHOST;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeHistUnidadeTalao;ENTITY; D ;getEntidadePessoa;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.TransacaoConsultaBase;TRANSACAO; R, D ;montarCampoLookUp;25;5;9;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.GerarItemITD;TRANSACAO; R, D ;initialize;189;35;6;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialCmdSQL;167;15;9;5;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;setAgencia;16;3;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirDetalheReceitaOutroOrgaoToSource;87;64;10;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESIT;120;41;19;6;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;formatarTelaDAEAvulsoContribInscrito;159;31;11;3;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroArg;238;70;17;1;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.cancelamento.dae.CancelarDAEPeloNumero;TRANSACAO; R ;process;52;24;9;0;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarRecolhimentoGNREOnLine;58;8;20;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;preencheDocCabecalhoSAEPeriodo;26;6;3;3;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqChequeDevolvido;BACKGROUNDPROCESS; R ;processarArquivo;58;8;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineDAE;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;115;27;25;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqChequeDevolvido;BACKGROUNDPROCESS; R, D ;validar;198;58;22;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeObjetoReferencia;ENTITY; D ;setDsObjetoReferencia;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;setValoresCamposLayout;24;3;11;1;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqErroRepasseDAE;BACKGROUNDPROCESS; R ;validar;112;31;10;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirItemDED;117;71;7;2;Muitos Desvios
+br.gov.se.sefaz.sae.custodiais.to.TransacaoCustodiais;TRANSACAO; R, D ;montarCampoLookUp;25;5;9;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeHistUnidadeTalao;ENTITY; D ;setDsAnteriorCampo;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;isDAR;25;11;2;1;Método Longo
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSIT;[CONSTANTESEMISSAODAE]; R, D ;gerarDAEMensal;4;1;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosGNRE;381;154;22;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialGMRCmdSQL;76;8;8;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.alteracao.viaEletronica.SelecionarItemDAEManualViaEletronica;TRANSACAO; R, D ;process;528;192;21;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;obterDAEsVencidosPorChequeDevolvido;9;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAE;BACKGROUNDPROCESS; D ;validarSituacaoDocumento;37;15;14;3;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.repasse.ConsultaRepasseFUNPREV;TRANSACAO; R, D ;setItensDocumento;138;25;10;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;calcularDataValidadeDAE;142;43;12;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;obterEntidadeCotacaoIPVA;11;1;3;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoDoc;45;4;5;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.dao.custodiais.DAOSAESQLBean;PERSISTENCE; D ;getEntidadeConversaoReceita;28;2;10;1;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorConcBancBase;GERENCIADORBASE; R, D ;registrarMovConsolidado;23;3;8;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.consultaArquivo.ConsultarArquivosNaoEnviadosPeloBanco;TRANSACAO; R ;process;91;26;18;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorConcBancBase;GERENCIADORBASE; R, D ;registrarBaixaPendencia;11;2;8;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeObjetoReferencia;ENTITY; D ;setDtInicioVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorRepasse;GERENCIADORBASE; R, D ;gravarValorRepasse;50;8;13;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.IdentificacaoDoc;TRANSACAO; R ;setaDadosDocIdent;64;25;6;4;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.contribuinteInscrito.AlterarItemDAE;TRANSACAO; R, D ;process;83;28;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;gravaDataFechamentoMensal;4;1;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorRepasse;GERENCIADORBASE; R, D ;calcularRepasse;26;5;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropriedadesItemDaeICMSNaoInscInt;102;16;6;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeReceita;ENTITY; D ;getEntidadeGrupoReceita;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSIT;[CONSTANTESEMISSAODAE]; R, D ;gerarDAEDIA;3;1;4;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.cheqDev.ConsultarCheqDev;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;49;7;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setVlPercentMultaMora;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadePeriodicidadeApuracao;ENTITY; D ;setDtFimVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEITCMD;90;29;20;8;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterVencimentoNormalICMS;145;25;13;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;preeencherDocContribInscrito;51;35;2;2;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarHistoricoDAE;30;9;12;11;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.EmitirDAEEspecialContribuinte;TRANSACAO; R, D ;process;135;28;17;0;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;gravarCabecalho;25;4;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosDASSessao;74;25;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAS;BACKGROUNDPROCESS; R ;validar;83;13;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasse;TRANSACAO; R, D ;gravarArquivoRepasseGNRE;159;30;15;3;Método Longo
+br.gov.se.sefaz.sae.ne.GNRE;ENTITY; D ;removerPendencia;10;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarAlteracaoGNRE;238;95;24;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;obterTotaReceitaItens;31;11;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;concatenarCampos;196;71;24;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeGrupoMotivoReceita;ENTITY; D ;getEntiadeReceita;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.registro.RegistroG;REGISTROMOVCONSOLIDADO; R, D ;validarCodigoBarras;108;40;9;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ConsultaArrecadacao;TRANSACAO; R, D ;setItensDocumento;61;13;13;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;BaixaPendenciaContrib;10;1;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemMultaFiscal;TRANSACAO; R ;process;68;25;7;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemReceitaOutrosOrgaos;TRANSACAO; R, D ;initialize;207;34;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialGR;14;3;7;5;Muitos Parâmetros
+br.gov.sefaz.se.sae.oper.to.substituicao.SubstituirDAE;TRANSACAO; R, D ;process;109;28;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoGNRE;340;168;17;1;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.IdentificacaoDoc;TRANSACAO; R, D ;setaDadosDocIdent;64;25;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadePercentRepasseReceita;ENTITY; D ;getEntidadeReceita;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDAEManualViaEletronica;623;169;16;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeIpvaAntecipado;ENTITY; R ;EntidadeIpvaAntecipado;8;1;3;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqChequeDevolvido;BACKGROUNDPROCESS; R ;validar;198;58;22;0;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;isDAR;25;11;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.reemissao.GerarReemissaoDAESIT;TRANSACAO; R, D ;process;93;28;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.arquivo.ProcessarArquivoRecebidoBase;BACKGROUNDPROCESS; R, D ;adicionarPendencia;3;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;114;24;24;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.EmitirDAEAvulso;TRANSACAO; R ;process;79;24;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.alteracao.viaEletronica.SelecionarItemDAEManualViaEletronica;TRANSACAO; R, D ;process;528;192;21;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.oper.to.CadastrarVencimentoICMS;TRANSACAO; R ;process;72;23;8;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.desmembramento.itemDae.AlterarItemDesmembramentoDAE;TRANSACAO; R ;initialize;112;18;10;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeTipoDocumentoSituacao;ENTITY; D ;getEntidadeSituacaoDoc;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.reemissao.ReemitirDAEInternet;TRANSACAO; R, D ;process;93;36;15;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeProdutoSAE;ENTITY; D ;getEntidadeGrupoProduto;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarSituacaoDAE;14;2;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ItemDetalheDAE;TRANSACAO; R, D ;montaDetalheItemIncons;8;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeMotivoDevolucaoCheque;ENTITY; D ;setDsMotivoDevolucao;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEDIA;132;42;20;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirSourceToResult;107;48;2;3;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;calcularDataValidadeDAE;142;43;12;1;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorRepasse;GERENCIADORBASE; R, D ;consultarRepasseFunprevporPeriodoEntidades;26;10;6;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;montarComboFormaRecolhimento;42;8;11;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;concatenarCampos;196;71;24;2;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ListarAtvdEconCateg;TRANSACAO; R, D ;montaDocSaidaCAE;16;3;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarDadosDAE;421;194;18;2;Muitos Desvios
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.ConfirmaRepasseFinanceiro;TRANSACAO; R ;process;37;9;18;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.tb.arquivo.ProcessarArquivoRecebidoBase;BACKGROUNDPROCESS; R, D ;getPendenciaArquivo;7;6;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.ConsultarHistoricoCustodiais;TRANSACAO; R ;process;102;27;17;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeMotivoReceita;ENTITY; D ;getEntidadeGrupoMotivoReceita;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemPSDI;TRANSACAO; R ;initialize;100;14;7;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setDtFinalVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R ;registrarDadosConcBanc;137;22;18;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;getEntidadePessoa;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroArg;238;70;17;1;Método Longo
+br.gov.se.sefaz.sae.custodiais.to.percentCalculoReceita.AlterarPercentCalculoReceita;TRANSACAO; R ;process;81;25;12;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeMetasArrecadacao;ENTITY; D ;setCdPessoaOperacao;11;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.EmitirDaeEspecialContribuinte;TRANSACAO; R ;process;77;23;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;registrarReferenciaDeCheque;7;2;5;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSPED;UNDEFINED; R, D ;gerarDAE;3;1;4;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;exibirCamposDesmembramentoDAE;96;50;11;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeConversaoReceita;ENTITY; D ;getEntidadeObjetoReferencia;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNREOnLine;BACKGROUNDPROCESS; D ;validarSituacaoDocumento;34;13;9;3;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropriedadesItemDaeMultaFiscalEspecial;97;17;15;2;Método Longo
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarRecolhimentoGNRE;68;12;24;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESPED;84;23;18;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDesmembramentoGNRE;285;161;17;1;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.cadastro.conta.CadastrarContaBancaria;TRANSACAO; R, D ;getOcorrenciasNavegacao;19;3;10;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDaeNotificacao;4;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeMotivoAlteracaoDoc;ENTITY; D ;getEntidadeSituacaoDoc;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarMovimentacaoTalaoCadastro;20;8;6;11;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterVencimentoICMSTermo;147;30;13;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteInscrito.AlterarItem;TRANSACAO; R, D ;process;125;52;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;verificaCampoAlteradoItemDAE;14;8;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeCampoDoc;ENTITY; D ;setDsCampoBD;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;setValoresCamposLayout;24;3;11;1;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeConversaoReceita;ENTITY; D ;getEntidadeTipoDesconto;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;validarEtiqueta;11;2;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemICMSContribuinteNaoInscritoConfirmar;TRANSACAO; R ;initialize;95;17;7;0;Método Longo
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorConcBancBase;GERENCIADORBASE; R, D ;registrarMovParcial;28;4;11;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorConsulta;GERENCIADORBASE; R, D ;obterDAENaoRepassado;23;7;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeReceita;ENTITY; D ;setDtInicioVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeObjetoReferencia;ENTITY; D ;setDtFimVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarDadosConciliacaoBancaria;142;36;17;2;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrPrioridadePortaria;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.contribuinteInscrito.AlterarItemDAE;TRANSACAO; R, D ;initialize;114;49;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDadosConciliacao;125;76;7;2;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNREOnLine;BACKGROUNDPROCESS; R ;processarArquivo;55;22;12;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.ConsultarContribuinte;TRANSACAO; R ;process;103;37;17;0;Método Longo
+br.gov.se.sefaz.sae.isencaoTributos.to.ICMS.AtenderSolicitacaoAguardFiscalizacaoFinal;TRANSACAO; R ;doProcess;46;6;18;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ne.DbaDocumentoBase;ENTITY; D ;DbaDocumentoBase;6;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.correcao.CorrigirDadosGNRE;BACKGROUNDPROCESS; R, D ;gravarHistoricoGNRE;27;6;11;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteInscrito.AlterarItem;TRANSACAO; R, D ;process;125;52;14;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.AlterarItemDAE;TRANSACAO; R, D ;initialize;357;143;14;0;Método Longo
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;montarComboCnaefContribInscrito;23;2;11;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.consultaArquivo.ConsultarArquivosNaoEnviadosPeloSAE;TRANSACAO; R ;process;85;18;18;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;obterValorTotalReceitaAtualizado;20;8;8;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.viaEletronicaDAEManual.ConsultarContribuinteDAEManual;TRANSACAO; R, D ;process;118;40;19;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAE;BACKGROUNDPROCESS; R, D ;registrarRecolhimentoDocumento;203;44;17;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEDIA;132;42;20;5;Método Longo
+br.gov.se.sefaz.sae.oper.to.CadastrarVencimentoICMS;TRANSACAO; R, D ;comparaDataInicialFinal;8;8;2;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.DedDetalheDAE;ENTITY; D ;adicionarEtiqueta;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.ipva.ConsultarLog;TRANSACAO; R, D ;process;105;34;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarRepasseTalao;19;4;10;13;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarRecebimentoDoTalao;17;6;7;7;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrMesRefFinal;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarRecolhimentoGNREOnLine;58;8;20;6;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.ExcluirItemDAE;TRANSACAO; R, D ;process;151;41;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.alteracao.dae.AlterarDAE;TRANSACAO; R ;process;96;28;23;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeSituacaoChequeDev;ENTITY; D ;setDsSituacao;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeTalonario;ENTITY; D ;setVetorEntidades;7;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirLabel;171;67;3;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.GerarItemReceitaOutrosOrgaos;TRANSACAO; R ;initialize;115;19;11;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESAF;92;31;17;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDesmembramentoDAS;83;35;8;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;montarComboFormaRecolhimentoNaoInscrito;16;2;10;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarCancelamentoDAR;3;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.DedDetalheDAE;ENTITY; D ;DedDetalheDAE;7;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;registrarHistoricoDAEAlteracao;4;1;4;9;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;montarItens;98;27;11;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESPED;84;23;18;5;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;123;37;14;5;Método Longo
+br.gov.se.sefaz.sae.tb.arquivo.GerenciadorArquivos;BACKGROUNDPROCESS; R, D ;mover;27;6;9;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasse;TRANSACAO; R, D ;gravarArquivoRepasseDAE;382;67;17;5;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;exibirCamposDAE;199;83;19;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.dao.custodiais.DAOSAESQLBean;PERSISTENCE; R, D ;registrarHistoricoCustodial;13;9;6;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;gravaValorRepasse;34;8;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarDadosConciliacaoBancaria;142;36;17;2;Método Longo
+br.gov.se.sefaz.sae.oper.to.desmembramento.itemDae.AlterarItemDesmembramentoDAE;TRANSACAO; R ;process;110;38;13;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.ExcluirItemDAE;TRANSACAO; R, D ;process;151;41;14;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialCmdSQLFormaRecolhimento;145;16;7;6;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIPVA;GERENCIADORBASE; R, D ;obterVeiculoRenavam;58;26;9;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;cancelarDAEITCMD;14;2;6;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAE;BACKGROUNDPROCESS; R, D ;validarDocumentoMovimentoConsolidado;126;29;27;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirItemDAEContribuinteInscrito;135;56;20;3;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNREOnLine;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;130;29;25;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESAP;110;39;17;8;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESIT;120;41;19;6;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.desmembramento.itemDae.ListarItensDesmembramentoDAE;TRANSACAO; R, D ;registrarDesemembramentoItemDAE;222;80;15;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeICMSContribNaoInsc;ENTITY; D ;getEntidadeObjetoReferencia;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.talonario.ConsultaAvancadaTalonario;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroIntervaloData;114;33;7;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosEmissao;36;34;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAE;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;126;29;27;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESAF;92;31;17;5;Muitos Desvios
+br.gov.se.sefaz.sae.isencaoTributos.to.ICMS.AtenderSolicitacaoEmAnaliseFinal;TRANSACAO; R, D ;doProcess;77;12;25;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;getEntidadeReceita;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialPRPCmdSQL;96;9;9;5;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeTipoDesconto;ENTITY; D ;setDsTipoDesconto;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialEntidadeCredora;14;3;7;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.gnre.ws.contingencia.xml.TContgGNRE;ENTITY; D ;getTRetornoGNRE;6;2;3;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;gravarCabecalho;26;4;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemICMSContribuinteInscrito;TRANSACAO; R ;process;103;59;15;0;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.IdentificacaoDoc;TRANSACAO; R, D ;montaDocumentoInconsistente;42;13;13;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;exibirCamposGNRE;205;84;17;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirItemITD;59;26;11;3;Muitos Desvios
+br.gov.se.sefaz.sae.isencaoTributos.to.emitir.EmitirTermoResponsabilidade;TRANSACAORELATORIO; R ;getConcecionaria;95;13;11;1;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDaeEspecial;87;40;3;3;Muitos Desvios
+br.gov.se.sefaz.sae.gnre.ws.contingencia.xml.TRetornoGNRE;ENTITY; D ;getCampoExtra;6;2;3;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosGNRESessao;199;110;14;4;Muitos Desvios
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasseBB;TRANSACAO; R ;gravarArquivo;151;27;15;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;gravaHistoricoDAE;3;1;3;10;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIsencaoTributos;GERENCIADORBASE; R, D ;registrarIsencaoVeiculo;37;6;10;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNRE;BACKGROUNDPROCESS; R, D ;registrarRecolhimentoDocumento;230;62;30;0;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArquivoRepasseFinanceiroDAEBase;BACKGROUNDPROCESS; R, D ;registrarRepasseDoc;19;3;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;setBanco;14;3;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosConcBancaria;93;75;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.talonario.ConsultaAvancadaTalonario;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroIntervaloData;114;33;7;1;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.cancelamento.dae.ConsultarDAECancelamento;TRANSACAO; R ;process;90;27;16;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorMantab;UNDEFINED; R, D ;executarMantabUtil;19;4;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;montarItens;98;27;11;3;Método Longo
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarAlteracaoGNRE;238;95;24;3;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.concBanc.ng.registro.RegistroG;REGISTROMOVCONSOLIDADO; R, D ;validarCodigoBarras;108;40;9;0;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;verificarIntervaloData;28;13;3;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteInscrito.EmitirDAEContribuinteInscrito;TRANSACAO; R, D ;process;127;27;16;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarRecolhimento;148;61;26;3;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaQuery;173;26;14;2;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.AtualizarValorRepasse;BACKGROUNDPROCESS; D ;acumulaValoresPorConta;32;5;9;3;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;formatarTela;91;40;4;4;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodial;14;3;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.isencaoTributos.to.certidaoIPVA.CertidaoBase;TRANSACAO; R, D ;setaDocSaida;11;1;5;9;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeGrupoMotivoReceita;ENTITY; D ;setDsGrupoMotivo;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorMantab;UNDEFINED; R, D ;navegacaoMantabUtil;4;1;6;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;getValorCampo;111;33;8;2;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArqRepasseBB;BACKGROUNDPROCESS; R ;gravarArquivo;122;22;14;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;concederDescontoICMS;27;5;3;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.GNRE;ENTITY; D ;adicionarPendencias;6;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAE;BACKGROUNDPROCESS; R ;registrarRecolhimentoDocumento;203;44;17;0;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;getValorCampo;111;33;8;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setQtMesLimiteMultaMora;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.desmembramento.itemDae.AlterarItemDesmembramentoDAE;TRANSACAO; R, D ;process;110;38;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;ocultarCampoDAEManualViaEletronica;390;56;12;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.GerarItemITD;TRANSACAO; R, D ;initialize;189;35;6;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarDadosDAE;421;194;18;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.GerarItemIcmsContribuinteNaoInscrito;TRANSACAO; R ;process;51;23;9;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;getValoresCampoLayout;6;2;6;3;Muitos Desvios
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSAF;UNDEFINED; R, D ;gerarDAE;3;1;4;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.gnre.ws.contingencia.xml.TRetornoGNRE;ENTITY; D ;getErro;6;2;3;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.AlterarItemDAE;TRANSACAO; R, D ;process;147;61;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeReceita;ENTITY; D ;setDsReceita;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroIntervaloData;198;43;7;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoDAESubstituicao;214;63;9;5;Método Longo
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarHistoricoNovaGNRE;4;1;3;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaFiltroDetalheDAE;108;17;5;1;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.reemissao.ReemissaoDAESIT;TRANSACAO; R ;process;91;25;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESPED;84;23;18;5;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemICMSContribuinteNaoInscrito;TRANSACAO; R ;process;61;22;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropriedadesItemReceitaNaoTributariaEspecial;115;10;10;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;reemitirDAEITCMD;91;27;13;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirValoresToDocumento;109;34;5;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeConversaoReceita;ENTITY; D ;getEntidadeReceitaSAE;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;obterVencimentoICMS;15;1;4;10;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;setGNRE;186;57;23;3;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarRegistrarDAEAvulso;9;1;6;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirSourceToResult;107;48;2;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialContaRepasse;14;3;7;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArqRepasseDAEResiduo;BACKGROUNDPROCESS; R ;processarArquivo;100;17;18;0;Método Longo
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;obterLayout01;39;8;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaFiscalizacao;CONSULTAAVANCADATRANSBASE; R, D ;montarFiltroArg;375;44;15;4;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirItemDAE;102;49;4;3;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirItemDED;117;71;7;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialPRP;14;3;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarDistribuicaoTalao;19;4;10;12;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeSituacaoDoc;ENTITY; D ;setDsSituacao;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropiedadesItemDaePSDI;94;13;10;2;Método Longo
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoGNRE;340;168;17;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;123;37;14;5;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorConcBancBase;GERENCIADORBASE; R, D ;atualizarValorDeDataReprocessada;36;4;16;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.GerarDAEEspecial;TRANSACAO; R ;process;127;27;16;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;atualizarSituacaoContrib;15;4;5;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEMensal;75;14;14;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;114;24;24;0;Método Longo
+br.gov.se.sefaz.sae.gnre.ws.contingencia.xml.TContgGNRE;ENTITY; D ;getLote;6;2;3;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeReceita;ENTITY; D ;setDtFimVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.correcao.CorrigirDadosGNRE;BACKGROUNDPROCESS; R, D ;gerarLog;19;1;5;9;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemReceitaOutrosOrgaos;TRANSACAO; R, D ;process;98;34;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.viaEletronicaDAEManual.ConsultarContribuinteDAEManual;TRANSACAO; R ;process;118;40;19;0;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;getNmPessoa;25;4;12;1;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ConsultaArrecadacaoARecolher;TRANSACAO; R, D ;getOcorrenciasNavegacao;26;4;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setDtInicioVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarRecolhimento;148;61;26;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorGNRE;UNDEFINED; R, D ;converterEntidadeGNRE;154;39;18;1;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;exibirCamposDAE;199;83;19;2;Método Longo
+br.gov.se.sefaz.sae.tb.correcao.CorrigirDadosGNRE;BACKGROUNDPROCESS; R, D ;verificaAlteracaoCampos;8;6;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeCampoDoc;ENTITY; D ;setNmCampo;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;getValorCampoLayoutNomeEmpresa;5;2;5;2;Muitos Desvios
+br.gov.se.sefaz.sae.custodiais.to.vencimentoIcms.IncluirVencimentoIcms;TRANSACAO; R, D ;process;256;55;18;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteInscrito.EmitirDAEContribuinteInscrito;TRANSACAO; R ;process;127;27;16;0;Muitos Desvios
+br.gov.sefaz.se.sae.oper.to.substituicao.SubstituirDAE;TRANSACAO; R ;process;109;28;13;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;getEntidadeFormaRecolhimento;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.registro.RegistroG;REGISTROMOVCONSOLIDADO; R, D ;validar;73;28;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.DedDetalheDAE;ENTITY; D ;setCnae;12;6;3;5;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;123;37;14;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosGNRESessao;199;110;14;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.isencaoTributos.to.IPVA.EfetuarSolicitacaoImunidadeIPVAInicio;TRANSACAO; R, D ;verificarPeriodoImunidadeRenavam;5;2;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ItemDetalheDAE;TRANSACAO; R ;setDocDadosIcms;87;19;18;3;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.documento.ListarAtvdEconCateg;TRANSACAO; R, D ;setCategoria;41;7;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEDIA;132;42;20;5;Muitos Desvios
+br.gov.se.sefaz.sae.ne.DbaDocumentoBase;ENTITY; R ;DbaDocumentoBase;6;1;2;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorGNRE;GNRE; R, D ;registrarAlteracaoGNRE;238;95;24;3;Método Longo
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.ExibirDetalheRepasse;TRANSACAO; R, D ;montaDocSaida;7;2;8;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeCombSituacaoCheqDev;ENTITY; D ;getSituacaoPermitida;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterVencimentoICMSTermo;147;30;13;6;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;getValorCampo;149;44;6;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.EmitirDAEEspecialContribuinteNaoInscrito;TRANSACAO; R ;process;87;27;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.repasse.ConsultaRepasseFUNPREV;TRANSACAO; R ;setItensDocumento;138;25;10;4;Muitos Desvios
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;getValorCampoLayout;12;3;6;3;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R, D ;validarDocumentoMovimentoConsolidado;114;24;24;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;validarObjReferencia;22;23;5;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.AlterarItemDAE;TRANSACAO; R, D ;process;291;120;17;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.EmitirDAEEspecialContribuinte;TRANSACAO; R, D ;process;135;28;17;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ConsultaArrecadacao;TRANSACAO; R, D ;getOcorrenciasNavegacao;20;3;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.correcao.CorrigirNumeroTalaoDAEManual;BACKGROUNDPROCESS; R ;beforeRunTransLess;108;8;15;0;Método Longo
+br.gov.se.sefaz.sae.isencaoTributos.to.abas.AbasIsencaoTributos;ABAS; R, D ;preencheDocumentoCabecalhoIsencao;4;1;2;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.concBanc.ConsultaConcBanc;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;77;13;11;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.ConsultarHistoricoCustodiais;TRANSACAO; R, D ;comparaDataInicialFinal;10;8;2;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNREOnLine;BACKGROUNDPROCESS; R, D ;validarDocumentoMovimentoConsolidado;130;29;25;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.ipva.ConsultarLog;TRANSACAO; R ;process;105;34;13;0;Método Longo
+br.gov.se.sefaz.sae.ne.DedDetalheDAE;ENTITY; D ;setCnae;12;6;3;5;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosGNRE;381;154;22;2;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAE;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;126;29;27;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ConsultaArrecadacaoRecolhidos;TRANSACAO; R, D ;setItensDocumento;43;10;10;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ti.SAEIntegracaoITCMD;UNDEFINED; R, D ;gerarDAE;4;1;5;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIsencaoTributos;GERENCIADORBASE; R, D ;baixaIsencao;9;3;7;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAEITCMD;90;29;20;8;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;analisarMudancaReceita;39;30;4;3;Muitos Desvios
+br.gov.se.sefaz.sae.ne.GNRE;ENTITY; D ;adicionarPendencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeTipoDocumento;ENTITY; D ;setDsTipoDocumento;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeConversaoReceita;ENTITY; D ;getEntidadeRegimeTributacao;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.isencaoTributos.to.consulta.ConsultaAvancadaIsencaoTributos;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;34;9;11;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadePercentRepasseReceita;ENTITY; D ;setVlPercentual;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;obterVencimentoReceita;44;16;10;13;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNRE;BACKGROUNDPROCESS; R, D ;registrarRecolhimentoDocumento;189;55;24;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.contribuinteNaoInscrito.AlterarItemDAE;TRANSACAO; R ;initialize;114;49;14;0;Método Longo
+br.gov.se.sefaz.sae.isencaoTributos.to.listar.ConsultarDocumentos;TRANSACAO; R, D ;montarDocDocumentosSolicitacao;19;4;8;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.custodiais.to.vencimentoIcms.IncluirVencimentoIcms;TRANSACAO; R, D ;process;256;55;18;0;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNREOnLine;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;130;29;25;0;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoIPVA;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;69;14;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarPrescricaoCancelamentoDAR;21;2;7;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoHistoricoDAE;36;14;8;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialCmdSQLFormaRecolhimento;145;16;7;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeGrupoReceita;ENTITY; D ;setDsGrupoReceita;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;registrarHistoricoNovaDAS;4;1;3;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.ipva.ListarLogIPVA;TRANSACAO; R, D ;initialize;259;74;10;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDaeICMSContribuiteInscrito;160;29;10;2;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;totalizarValorDAEPorChequeDevolvido;20;2;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorGNRE;UNDEFINED; R, D ;converterReceitaFormaGNRE;48;15;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorConsulta;GERENCIADORBASE; R, D ;obterArqEnviadosBanco;17;3;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.alteracao.viaEletronica.ExcluirDAEManualViaEletronica;TRANSACAO; R, D ;process;195;74;18;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.contribuinteInscrito.AlterarItemDAE;TRANSACAO; R ;initialize;114;49;14;0;Método Longo
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;getValoresCampoLayout;6;2;6;3;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosGNRE;381;154;22;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.GerarDAEEspecial;TRANSACAO; R, D ;process;127;27;16;0;Método Longo
+br.gov.se.sefaz.sae.custodiais.to.TransacaoCustodiais;TRANSACAO; R, D ;getDadosOrdenadosIntervalo;7;1;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterVencimentoNormalICMS;145;25;13;2;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemICMSContribuinteInscrito;TRANSACAO; R, D ;initialize;255;55;9;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.ItemDetalheDAE;TRANSACAO; R ;setDocDadosOutrasRec;93;21;16;3;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setVlUFP;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;inserirDocumentoArrecadacaoSql;131;22;5;1;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoDAESubstituicao;214;63;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.ExcluirItemDAE;TRANSACAO; R, D ;process;133;33;13;0;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeICMSContribInsc;ENTITY; D ;getEntidadeRegimeTributacao;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirItemDAEPSDI;93;27;14;3;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeFormaRecolhimento;ENTITY; D ;setDtInicioVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;getNmPessoa;25;4;12;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;montaObjItemDAE;175;14;17;2;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;setVlPercentJurosMora;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;obterDadosCheque;22;1;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqChequeDevolvido;BACKGROUNDPROCESS; R, D ;validar;198;58;22;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ne.EntidadeVeiculoDetranNova;ENTITY; D ;getFlConsulta;6;2;1;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;registrarAlteracaoDAS;124;27;17;3;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;obterDocParaCheque;11;1;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.isencaoTributos.to.IPVA.EfetuarSolicitacaoIsencaoIPVAInicioBase;TRANSACAO; R, D ;verificarDadosVeiculo;38;14;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ListarPeriodoDocumentosRecolhidos;TRANSACAO; R, D ;getOcorrenciasNavegacao;18;3;8;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.AlterarItem;TRANSACAO; R, D ;process;125;52;14;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;obterEntidadeHistUnidadeTalao;14;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.concBanc.ConsultaConcBanc;CONSULTAAVANCADATRANSBASE; R, D ;getValorCampo;78;24;4;2;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;getChequeDevolvido;27;3;8;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAE;BACKGROUNDPROCESS; R, D ;validar;77;16;21;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.consulta.ConsultarDocParcialSemConsolidado;TRANSACAO; R, D ;montarDocumento;17;2;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeSituacaoDAEManual;ENTITY; D ;setDsSituacao;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;registrarHistoricoDAE;5;1;5;11;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;formatarTelaDAEAvulsoContribInscrito;159;31;11;3;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.itd.GerarItemITD;TRANSACAO; R, D ;process;176;80;13;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.GerarItemMultaFiscal;TRANSACAO; R, D ;process;57;33;8;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropiedadesItemDaeICMS;102;16;6;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIPVA;GERENCIADORBASE; R, D ;gerarDAEIPVA;48;14;12;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.desmembramento.dae.ConfirmarDesmembrarDAE;TRANSACAO; R, D ;registrarDesmembramentoDAEComplementar;80;28;13;2;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;registrarReferenciaBaixaCheque;17;4;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArqRepasseBB;BACKGROUNDPROCESS; R ;gravarArquivo;122;22;14;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;inserirContaBancaria;45;2;5;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeSituacaoTalao;ENTITY; D ;setDsSituacao;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.contribuinteNaoInscrito.AlterarItemDAE;TRANSACAO; R, D ;initialize;114;49;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.DedDetalheDAE;ENTITY; R ;setCnae;12;6;3;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeReceita;ENTITY; D ;setCdOrigemReceita;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;registrarHistoricoDAS;3;1;2;9;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrAnoRefInicial;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;registrarHistoricoCheque;13;3;6;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasse;TRANSACAO; R ;gravarArquivoRepasseDAS;115;21;15;3;Método Longo
+br.gov.se.sefaz.sae.consultas.to.TransacaoConsultaBase;TRANSACAO; R, D ;getOcorrenciasNavegacao;20;3;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;getChequeDevolvido_;23;1;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.ConsultaAvancadaSAE;CONSULTAAVANCADATRANSBASE; R, D ;getValorCampo;149;44;6;2;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESAF;92;31;17;5;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;preeencherDocContribNaoInscrito;37;29;2;2;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosDASSessao;74;25;6;4;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineDAE;BACKGROUNDPROCESS; R ;validarDocumentoMovimentoConsolidado;115;27;25;0;Método Longo
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqRepasseBB;TRANSACAO; R, D ;gravarArquivo;151;27;15;1;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrAnoPortaria;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeDataFechamentoMensal;ENTITY; D ;setCdPessoaOperacao;11;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;registrarHistoricoGNRE;3;1;2;9;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialCmdSQL;167;15;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoDAESubstituicao;214;63;9;5;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoDataConsolidado;14;1;10;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;gravaHistoricoRepasse;4;1;9;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.util.Excecao;EXCEPTION; D ;Excecao;4;1;3;2;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoSituacaoDAE;14;2;6;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemReceitaOutrosOrgaos;TRANSACAO; R, D ;initialize;207;34;13;0;Método Longo
+br.gov.se.sefaz.sae.oper.to.alteracao.viaEletronica.SelecionarItemDAEManualViaEletronica;TRANSACAO; R, D ;process;528;192;21;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;gerarNotificacaoCheqDev;41;3;14;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterDataVencimento;5;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;registrarAlteracaoCheque;67;27;8;8;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;preencheDocCabecalhoSAE;62;15;8;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;atualizarPagamentoDocumento;18;1;4;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArqRepasseDAE;BACKGROUNDPROCESS; R, D ;processarArquivo;131;20;22;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.ipva.ListarLogIPVA;TRANSACAO; R, D ;initialize;259;74;10;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.ValorCampoLayout;ENTITY; D ;getValorCampoLayout;12;3;6;3;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;getDataVencimento;25;3;10;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.arquivo.ReceberArquivo;BACKGROUNDPROCESS; D ;getNovoNome;3;1;5;3;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrDiaVencimento;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorGNRE;UNDEFINED; R, D ;converterEntidadeGNRE;154;39;18;1;Muitos Desvios
+br.gov.se.sefaz.sae.util.campo.CamposSAE;[CONSTANTES, CONSTANTESEMISSAODAE]; R, D ;setDocEnd;93;14;9;2;Método Longo
+br.gov.se.sefaz.sae.isencaoTributos.to.IPVA.AtenderSolicitacaoEmAnaliseFinal;TRANSACAO; R, D ;setPlacaChassi;15;7;6;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;registrarBaixaChequeDevolvido;19;5;5;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.vencimento.ConsultarVencimentoICMS;TRANSACAO; R ;process;70;23;9;0;Muitos Desvios
+br.gov.se.sefaz.sae.isencaoTributos.to.IPVA.EfetuarSolicitacaoImunidadeIPVAInicio;TRANSACAO; R, D ;verificarPeriodoImunidadeChassi;5;2;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.consulta.ConsultarArrecadacaoMultaFiscal;TRANSACAO; R ;setItensDocumento;99;9;9;2;Método Longo
+br.gov.se.sefaz.sae.consultas.to.documento.AbaBase;ABAS; D ;preencheDocCabecalhoSAEPeriodo;26;6;3;3;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.ExcluirItemDAE;TRANSACAO; R ;initialize;79;24;6;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;calcularPeriodoPrescricao;23;5;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarSituacaoDoc;14;2;13;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorConcBancBase;GERENCIADORBASE; R, D ;registrarMovConsolidadoDAS;19;2;8;8;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ConsultaArrecadacaoRecolhidos;TRANSACAO; R, D ;getOcorrenciasNavegacao;20;3;9;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirItemDAE;102;49;4;3;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirItemDAEInscrito;100;54;10;3;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirPropiedadesItemDae;92;41;3;3;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterVencimentoICMSTermo;147;30;13;6;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;getEntidadeObjetoReferencia;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.concBanc.ConsultaConcBanc;CONSULTAAVANCADATRANSBASE; R, D ;gravarCabecalho;25;4;10;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeTipoDocumentoSituacao;ENTITY; D ;getEntidadeTipoDocumento;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeFormaRecolhimento;ENTITY; D ;setDsFormaRecolhimentoICMS;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.GerarItemReceitaOutrosOrgaosConfirmar;TRANSACAO; R, D ;initialize;144;17;10;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;alterarSituacaoDAR;14;2;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.ConsultarRepasseDASGNRE;TRANSACAO; R, D ;exibirRepasseDASGNRE;134;27;12;1;Método Longo
+br.gov.se.sefaz.sae.talonario.to.baixarDAEManual.ListarDAEsParaBaixa;TRANSACAO; R, D ;setDAEsDoc;24;6;8;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorBase;TEST; R, D ;obterDatasVencimento;5;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.vencimento.ConsultarVencimentoICMS;TRANSACAO; R, D ;comparaDataInicialFinal;10;8;2;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.ConsultarContribuinteDAEManual;TRANSACAO; R ;process;118;40;19;0;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNREOnLine;BACKGROUNDPROCESS; R ;validar;99;16;21;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.reemissao.ReemitirDAEInternet;TRANSACAO; R ;process;93;36;15;0;Método Longo
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSAP;UNDEFINED; R, D ;obterVencimentoReceita;3;1;4;12;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeConversaoReceita;ENTITY; D ;getEntidadeFormaRecolhimento;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosEmissao;36;34;10;5;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarRegistrarDAEManual;27;4;6;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirDetalheDAEToSource;95;48;3;3;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrPortaria;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCheqDev;GERENCIADORBASE; R, D ;obterDocVinculadosCheque;9;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.desmembramento.das.DesmembrarDAS;TRANSACAO; R ;process;99;43;16;0;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;obterHistoricoCustodiais;21;8;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;registrarHistorico;24;7;11;9;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;emitirDAE;63;22;16;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialCmdSQLEntidadeCredora;94;8;8;6;Método Longo
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;montarCampoLookUp;25;5;9;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ti.SAEIntegracaoSAF;UNDEFINED; R, D ;obterVencimentoReceita;3;1;4;11;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirItemDAEInscrito;100;54;10;3;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarMovimentacaoTalaoG;20;8;6;11;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeVencimentoICMS;ENTITY; D ;setNrAnoRefFinal;4;2;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R, D ;validar;104;18;24;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirPropiedadesItemDaeICMSContribuiteInscrito;160;29;10;2;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.itcmd.ConsultarContribuinteITCMD;TRANSACAO; R ;initialize;108;45;11;0;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R ;registrarDadosConcBanc;137;22;18;2;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArqRepasseDAE;BACKGROUNDPROCESS; R, D ;getLinhaRegistroG;12;2;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqErroRepasseDAE;BACKGROUNDPROCESS; R ;validar;112;31;10;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.repasse.ConsultaRepasseFUNPREV;TRANSACAO; R, D ;setItensDocumento;138;25;10;4;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeFormaRecolhimento;ENTITY; D ;setDtFimVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeUnidadeTalao;ENTITY; D ;getEntidadePessoa;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeIsencaoVeiculo;ENTITY; D ;setCdPessoa;4;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.GerarArqRepasseDAEResiduo;BACKGROUNDPROCESS; R ;processarArquivo;100;17;18;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ne.DedDetalheDAE;ENTITY; D ;getCnae;7;10;1;0;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineDAE;BACKGROUNDPROCESS; R, D ;validar;70;16;20;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarItemHistorico;42;9;7;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialPRPCmdSQL;96;9;9;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.contribuinteNaoInscrito.AlterarItemDAE;TRANSACAO; R, D ;process;83;28;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.AlterarItemDAE;TRANSACAO; R, D ;initialize;357;143;14;0;Muitos Desvios
+br.gov.se.sefaz.sae.conciliacaoBancaria.to.repasse.GerarArqDASRepasseBB;TRANSACAO; R ;gravarArquivo;107;18;15;1;Método Longo
+br.gov.se.sefaz.sae.ne.EntidadeMotivoTalao;ENTITY; D ;setDsDescricao;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeTipoDesconto;ENTITY; D ;setDtInicioVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeMotivoReceita;ENTITY; D ;setDsMotivoReceita;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeConvenioProdutoGNRE;ENTITY; D ;getEntidadeProdutoSAE;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialCmdSQLContaRepasse;13;2;8;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.daeAvulso.GerarItemICMSContribuinteNaoInscrito;TRANSACAO; R ;initialize;84;27;8;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeConversaoReceita;ENTITY; D ;getEntidadeTipoOperacao;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;validarDadosDAE;43;26;12;2;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeHistUnidadeTalao;ENTITY; D ;getEntidadeUnidade;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirValoresToDocumento;109;34;5;2;Muitos Desvios
+br.gov.se.sefaz.sae.oper.to.alteracao.viaEletronica.ExcluirDAEManualViaEletronica;TRANSACAO; R ;process;195;74;18;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarAlteracaoDae;25;8;14;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;obterDAE;132;9;17;1;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; R ;validar;104;18;24;0;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.reemissao.GerarReemissaoDAESIT;TRANSACAO; R ;process;93;28;11;0;Método Longo
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoGNREOnLine;BACKGROUNDPROCESS; D ;validarSituacaoDocumento;31;16;13;3;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeReceita;ENTITY; D ;getEntidadeOrgao;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;validarMesAnoDAE;11;6;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorTalonario;GERENCIADORBASE; R, D ;registrarHistoricoDAEManual;12;2;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeHistUnidadeTalao;ENTITY; D ;setDtOperacao;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;registrarHistoricoCustodialGRCmdSQL;56;7;8;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorConcBancBase;GERENCIADORBASE; R, D ;calcularPrazoCompensacao;12;4;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadePeriodicidadeApuracao;ENTITY; D ;setDtInicioVigencia;4;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.ConsultarHistoricoCustodiais;TRANSACAO; R ;process;102;27;17;0;Muitos Desvios
+br.gov.se.sefaz.sae.ne.EntidadeHistUnidadeTalao;ENTITY; D ;set_dtOperacao;8;2;3;1;Muitos Desvios
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovConsolidadoDAS;BACKGROUNDPROCESS; R, D ;validarDocumentoMovimentoConsolidado;62;13;28;1;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.emissaoDAE.to.especial.contribuinteNaoInscrito.GerarItemReceitaOutrosOrgaos;TRANSACAO; R, D ;process;76;33;11;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarItensDED;103;113;9;5;Método Longo
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R ;atribuirItemDAEPSDI;93;27;14;3;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorOperacional;GERENCIADORBASE; R, D ;alterarDadosGNRESessao;199;110;14;4;Método Longo
+br.gov.se.sefaz.sae.ng.GerenciadorIsencaoTributos;GERENCIADORBASE; R, D ;obterDetalheIsencao;11;3;7;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.arquivo.ProcessarArquivoRecebidoBase;BACKGROUNDPROCESS; R, D ;registrarPendenciaArquivo;11;2;5;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeGrupoProduto;ENTITY; D ;setDsGrupo;5;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.ne.PendenciaArquivoSAE;PENDENCIAARQUIVO; R, D ;PendenciaArquivoSAE;4;1;3;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeHistDataFechamentoMensal;ENTITY; D ;setCdPessoaOperacao;11;3;2;1;Muitos Desvios
+br.gov.se.sefaz.sae.custodiais.to.percentCalculoReceita.IncluirPercentCalculoReceita;TRANSACAO; R, D ;process;77;33;12;0;Muitos Desvios
+br.gov.se.sefaz.sae.concBanc.ng.GerenciadorRepasse;GERENCIADORBASE; R, D ;gravarHistoricoRepasseFinanceiroSql;20;2;8;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarHistoricoDAESQL;30;8;12;10;Muitos Parâmetros
+br.gov.se.sefaz.sae.consultas.to.documento.IdentificacaoDoc;TRANSACAO; R, D ;montaDocumentoConsistente;35;11;11;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.emissaoDAE.to.TransacaoEmissaoDAE;TRANSACAO; R, D ;atribuirItemDAEContribuinteInscrito;135;56;20;3;Método Longo
+br.gov.se.sefaz.sae.talonario.to.excluirViaEletronica.ConfirmaExclusaoViaEletronica;TRANSACAO; R ;process;40;4;19;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;exibirCamposDAE;199;83;19;2;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;obterDAEsValidosPorChequeDevolvido;9;1;4;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorIntegracao;GERENCIADORBASE; R, D ;gerarDAESIT;120;41;19;6;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.consultas.to.talonario.ConsultaAvancadaTalonario;CONSULTAAVANCADATRANSBASE; R, D ;montaDoctoSaida;24;3;8;5;Muitos Parâmetros
+br.gov.se.sefaz.sae.tb.conciliacaoBancaria.ProcessarArqMovOnLineGNREOnLine;BACKGROUNDPROCESS; R, D ;validar;99;16;21;0;Alto Acoplamento Efferent
+br.gov.se.sefaz.sae.ne.EntidadePercentCalculoReceita;ENTITY; D ;getEntidadeMotivoReceita;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.consultas.to.contribuinte.ListarPeriodoDocumentosRecolhidos;TRANSACAO; R, D ;setItensDocumento;14;3;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.oper.to.TransacaoOperacional;TRANSACAO; R, D ;verificarAlteracaoDadosConciliacao;125;76;7;2;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorConsulta;GERENCIADORBASE; R, D ;obterArquivosEnviadosPeloSAE;11;1;5;4;Muitos Parâmetros
+br.gov.se.sefaz.sae.ne.EntidadeMotivoDAEManual;ENTITY; D ;getEntiadeSituacaoDAEManual;4;2;2;0;Muitos Desvios
+br.gov.se.sefaz.sae.ng.GerenciadorDocArrecadacao;GERENCIADORBASE; R, D ;registrarPrescricaoCancelamentoDAE;14;2;6;6;Muitos Parâmetros
+br.gov.se.sefaz.sae.ng.GerenciadorCustodiais;[CONSTANTES]; R, D ;obterEntidadeTipoContribCateg;12;1;3;6;Muitos Parâmetros
